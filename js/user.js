@@ -9,7 +9,7 @@ if(username){
     userDom.innerHTML=username;
 }
 logoutBtn.addEventListener("click", function(){
-    // localStorage.clear();
+    localStorage.clear();
     setTimeout(()=>{
         window.location="register.html";
     }, 1500)
