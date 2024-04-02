@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+header{
+    background-color: #494747;
+    padding: 10px 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+}
+.header-content h4{
+    color: rgb(237 73 73 / 92%);
+    font-family: "Amiri", serif;;
+
+}
+nav ul{
+display: flex;
+list-style: none;
+}
+nav ul#user_info{
+    display: none;
+    align-items: center;
+}
+nav ul#user_info li i{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav ul#user_info .carts-products{
+    position: absolute;
+    width: 200px;
+    transform: translate(-42%, 0);
+    background: #d6cfcf;
+    top: 44px;
+    padding: 10px;
+    border: 1px solid green;
+    display: none;
+}
+nav ul#user_info .carts-products a{
+    background: darkgreen;
+    display: block;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    
+}
+
+nav ul#user_info li{
+    position: relative;
+    margin: 0 7px;
+    
+}
+nav ul#user_info li .badge{
+    width: 20px;
+    height: 20px;
+    background-color: #f72525;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    top: -5px;
+    right: -11px;
+    font-size: 10px;
+    line-height: 20px;
+    display: none;
+}
+#logout{
+    margin-left:20px;
+}
+nav li a{
+display: block;
+color: #fff;
+min-width: 60px;
+margin: 0 5px;
+padding: 5px;
+
+}
+
+/* ****************** Form ************************* */
+
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    text-align: center;
+    background:#646060;
+    padding: 20px;
+}
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: rgb(237 73 73 / 92%);
+}
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline: 0;
+    background: gainsboro
+}
+.section-form form input[type="submit"]{
+    font-size: 20px;
+    text-transform:capitalize ;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-form form input[type="submit"]:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#search{
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #8f8b8b;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* products */
+.products{
+    width: 95%;
+    float: left;
+    margin: 10px 0;
+}
+.products-filter h2{
+    position: relative;
+    left: 180px;
+    color: #648561;
+}
+.products-filter{
+    width: 35%;
+    /* float: right; */
+    margin: 10px 0;
+    position: relative;
+    left: 400px;
+}
+#size-filter{
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+    min-height: 100px;
+
+}
+.product-item-img{
+    width: 24%;
+    margin-right: 10px;
+    height: 130px;
+}
+.product-item-desc a{
+display: block;
+font-size: 25px;
+color: #333;
+cursor: pointer;
+}
+.product-item-actions{
+    flex:1;
+    text-align:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item-actions .add-to-cart{
+    display: block;
+    margin-left: auto;
+    background-color: darkgreen;
+    color: #fff;
+    border:0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.product-item-actions .favorite{
+    cursor: pointer;
+    display:block;
+    width: 20px;
+    margin-left: auto;
+
+}
+
+.item-details div{
+    display: flex;
+}
+.item-details img{
+    
+    width: 50%;
+    margin: 10px 10px;
+    border: 1px solid #333;
+    padding: 2px;
+    height: 200px;
+    /* object-fit: cover; */
+}
+.edit-product{
+    display: block;
+    width: 140px;
+    border: none;
+    background: #42e733;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.edit-product:hover{
+    background-color: green;
+}
+
+/* create-products */
+.create-product-icon{
+position: fixed;
+bottom: 35px;
+right: 35px;
+width: 50px;
+height: 50px;
+background-color: #52057b;
+color: #fff;
+text-decoration: none;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+}
+.create-product-icon:hover{
+    opacity: 0.8;
+}
+.item-qty{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #e26d6d;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+}
+.user-avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px 0 ;
+}
+
+#edit-profile-form input{
+width: 100%;
+display: block;
+margin: 10px 0;
+height: 40px;
+
+}
+#edit-profile-form input[type=submit]{
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: 0;
+}
+/* #userAddproduct{
+display: none;
+} */
+@media only screen  and  (max-width:880px) {
+  
+    .header-content {
+        display: block;
+        text-align: center;
+        
+    }
+    .header-content h4{
+        font-size: 25px;
+    }
+    
+    .products-filter {
+        position: relative;
+        left: 80px;
+        width: 300px;
+    }
+
+    .products-filter h2{
+        position: relative;
+        left: 25px;
+        width: 300px;
+    }
+    .product-item{
+        display: block;
+        text-align: center;
+        /* width: 100%; */
+        margin: auto;
+    }
+}
+@media only screen and  (max-width:500px){
+    
+    nav #user_info{
+        display: flex;
+        flex-direction: column;
+        
+     
+    }
+
+    
+    .header-content h4{
+        font-size: 20px;
+    }
+    
+    
+    .products-filter {
+        position: relative;
+        left: 80px;
+        width: 150px;
+    }
+    .products-filter h2{
+        font-size: 20px;
+        position: relative;
+        left: 5px;
+        width: 190px;
+    }
+    .item-details div{
+        display: block;
+    }
+    .product-item{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+   
+}

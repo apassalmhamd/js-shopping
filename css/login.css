@@ -1,0 +1,12 @@
+@media only screen and  (max-width:880px) {
+    .header-content, .medai {
+        display: block;
+        text-align: center;
+        
+    }
+    .section-form{
+        width: 80%;
+        position: relative;
+        top: 250px;
+    }
+}
